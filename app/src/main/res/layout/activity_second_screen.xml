@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg">
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical">
+        </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second Screen"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="100dp"
+            android:layout_gravity="center_vertical">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Welcome"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinslight">
+        </TextView>
+        <TextView
+            android:id="@+id/showNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="John Doe"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinssemibold">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/selectedUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:gravity="center"
+        android:text="Selected User Name"
+        android:textColor="@color/black"
+        android:textSize="24sp">
+    </TextView>
+    <FrameLayout
+        android:layout_width="310dp"
+        android:layout_height="41dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp">
+
+        <ImageButton
+            android:id="@+id/choose_user_button"
+            android:layout_width="310dp"
+            android:layout_height="41dp"
+            android:background="@drawable/bg_button">
+        </ImageButton>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="16dp"
+            android:text="Choose a User"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_gravity="center">
+        </TextView>
+    </FrameLayout>
+
+</RelativeLayout>
